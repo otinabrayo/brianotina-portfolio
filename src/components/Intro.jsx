@@ -20,7 +20,7 @@ function Intro() {
             and I’m passionate about optimizing databases for maximum efficiency.
             <br/>
             Visit {' '}
-            <a className="text-cyan-600 hover:underline underline-offset-3 decoration-red-600"
+            <a className="text-cyan-600 hover:underline underline-offset-5 decoration-zinc-600"
                 href="https://github.com/otinabrayo"
                 rel='noreferrer noopener'
                 target="_blank"
