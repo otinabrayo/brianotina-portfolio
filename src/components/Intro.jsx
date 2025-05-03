@@ -1,4 +1,5 @@
 import React from "react"
+import Title from "./Title";
 
 function Intro() {
   return (
@@ -10,19 +11,27 @@ function Intro() {
             Data Engineer & Web Developer
         </p>
         <p className="text-sm max-w-xl mb-6 font-bold">
-            This is my complete bio <br/>
-            Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem sint veniam dolorem aliquid dolore est id
-            laudantium magni quis, magnam eos quasi, quam quibusdam sit ut
-            voluptate assumenda sapiente quod. <br/>
+            👋 Hi, I'm Brian Otina, a passionate Data Engineer and Web Developer with a strong
+            focus on back-end development. I have a solid foundation in Python, SQL, and Django
+            REST Framework, and I'm always eager to learn new technologies and improve my skills.
+            <br/>
+            🎓 I'm a skilled and motivated back-end developer specializing in creating scalable,
+            high-performance APIs with Python and Django REST Framework. My expertise lies in SQL,
+            and I’m passionate about optimizing databases for maximum efficiency.
+            <br/>
+            Visit {' '}
             <a className="text-cyan-600 hover:underline underline-offset-3 decoration-red-600"
                 href="https://github.com/otinabrayo"
                 rel='noreferrer noopener'
                 target="_blank"
                 >
-                My Github Page
+                my Github Page
             </a> {' '}
-            for more projects.
+            for more projects information.
+        </p>
+        <Title id="projects">Projects</Title>
+        <p className="text-sm max-w-xl mb-6 font-bold">
+            Here are some of the projects I've worked on:
         </p>
     </div>
   )
