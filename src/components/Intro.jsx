@@ -4,6 +4,13 @@ import Title from "./Title";
 function Intro() {
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
+        <div className="w-full flex justify-start pl-4">
+            <img
+                src="./public/assets/logo.png"
+                className="mb-2 w-15 h-15 rounded-full border-2 border-stone-900 dark:border-white"
+                alt="logo"
+            />
+        </div>
         <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">
             Brian Otina
         </h1>

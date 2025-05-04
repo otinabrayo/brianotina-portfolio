@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "../data/projects"; // Assuming you have a portfolioData.js file in the data folder
+import projects from "../data/projects";
 import PortfolioItem from "./PortfolioItem";
 
 function Portfolio() {
