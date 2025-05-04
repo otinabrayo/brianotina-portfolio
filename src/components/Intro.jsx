@@ -6,7 +6,7 @@ function Intro() {
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6">
         <div className="w-full flex justify-start pl-4">
             <img
-                src="./public/assets/logo.png"
+                src="./assets/logo.png"
                 className="mb-2 w-15 h-15 rounded-full border-2 border-stone-900 dark:border-white"
                 alt="logo"
             />
