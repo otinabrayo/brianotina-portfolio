@@ -1,5 +1,7 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Intro from './components/Intro'
+import IntroExpanded from './components/IntroExpanded'
 import Timeline from './components/Timeline'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
@@ -76,12 +78,24 @@ function App() {
          </button>
          <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
             <div className="max-w-5xl w-11/12 mx-auto">
-               <Intro />
-               <Portfolio />
-               <TechStackPage />
-               <Timeline />
-               <Contact />
-               <Footer />
+               <Router>
+                  <Routes>
+                     <Route
+                        path="/"
+                        element={
+                           <>
+                              <Intro />
+                              <Portfolio />
+                              <TechStackPage />
+                              <Timeline />
+                              <Contact />
+                              <Footer />
+                           </>
+                        }
+                     />
+                     <Route path="/journey" element={<IntroExpanded />} />
+                  </Routes>
+               </Router>
             </div>
          </div>
       </>

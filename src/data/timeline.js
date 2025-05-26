@@ -7,7 +7,7 @@ export default [
           "Currently pursuing AWS Certified Data Engineer Associate while building personal projects using Snowflake, Python, and Apache Airflow."
     },
     {
-        year: 2023,
+        year: 2024,
         title: "Personal End-to-End Data Engineering Project",
         duration: "Ongoing",
         description:

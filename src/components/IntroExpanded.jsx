@@ -42,6 +42,16 @@ function IntroExpanded() {
         <p className="text-lg leading-relaxed">
           Beyond the technical side, I enjoy bridging the gap between raw data and actionable insights — collaborating closely with analysts and stakeholders to turn complex data problems into streamlined, reliable workflows.
         </p>
+        <p className="text-lg leading-relaxed pb-7">
+          This website serves as a portfolio of my work, showcasing my <strong>skills</strong>, <strong>projects</strong>, and ongoing growth in the world of <strong>data engineering</strong>.
+        </p>
+      </div>
+
+      <div className="border-t-2 text-center dark:bg-stone-900 bg-stone-300 dark:text-white text-black">
+         {/* Social Icons */}
+         <p className="text-sm mt-2 opacity-50">
+            &copy; {new Date().getFullYear()}  Developed and Designed by Brian Otina. <br /> All rights reserved.
+         </p>
       </div>
     </section>
   );

@@ -1,9 +1,12 @@
+import { useNavigate } from 'react-router-dom'
 import React from "react";
 // import { FaAws, SiApachekafka } from "react-icons/si";
 
 function Intro() {
-  return (
-    // <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
+    const navigate = useNavigate();
+
+    return (
+        // <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
         <div className="flex flex-col items-center justify-center pt-6 pb-6">
             <div className="w-full flex justify-start">
                 <img src="./assets/logo.png" alt="logo" className="mb-2 w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white" />
@@ -22,10 +25,10 @@ function Intro() {
                 <li>Orchestrated Dockerized environments using <strong>Docker Compose</strong> to manage Airflow, Kafka, PostgreSQL, and Schema Registry setups.</li>
                 <li>Focus on <strong>Medallion Architecture</strong> and best practices in data modeling, pipeline optimization, and governance.</li>
             </ul>
-            <span className="p-4">|📘 For My Extended Data Engineering Journey <a href="#" target="_blank" rel="noopener noreferrer" className="underline animate-pulse text-rose-300">Click Me</a></span>
+            <span className="p-4">|📘 For My Extended Data Engineering Journey <a onClick={() => { navigate('/journey') }} className="m-1 border border-y-4 cursor-pointer animate-pulse text-pink-400 p-1">Click Me</a></span>
         </div>
-    // </section>
-  );
+        // </section>
+    );
 }
 
 export default Intro;
