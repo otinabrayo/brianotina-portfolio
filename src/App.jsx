@@ -4,6 +4,7 @@ import Timeline from './components/Timeline'
 import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import TechStackPage from './components/TechStackPage'
 
 function App() {
    const [theme, setTheme] = useState(null);
@@ -77,6 +78,7 @@ function App() {
             <div className="max-w-5xl w-11/12 mx-auto">
                <Intro />
                <Portfolio />
+               <TechStackPage />
                <Timeline />
                <Contact />
                <Footer />

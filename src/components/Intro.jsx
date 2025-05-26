@@ -1,47 +1,51 @@
-import React from "react"
-import Title from "./Title";
+import React from "react";
+// import { FaAws, SiApachekafka } from "react-icons/si";
 
 function Intro() {
-    return (
-        <div className="flex items-center justify-center flex-col text-center pt-6 pb-6">
-            <div className="w-full flex justify-start">
-                <img
-                    src="./assets/logo.png"
-                    className="mb-2 w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white"
-                    alt="logo"
-                />
-            </div>
-            <h1 className="text-4xl md:text-7xl dark:text-white mb-1 md:mb-3 font-bold">
-                Brian Otina
-            </h1>
-            <p className="text-base md:text-xl mb-3 font-medium">
-                Data Engineer & Web Developer
-            </p>
-            <p className="text-sm max-w-xl mb-6 font-bold">
-                👋 Hi, I'm Brian Otina, a passionate Data Engineer and Web Developer with a strong
-                focus on back-end development. I have a solid foundation in Python, SQL, and Django
-                REST Framework, and I'm always eager to learn new technologies and improve my skills.
-                <br />
-                🎓 I'm a skilled and motivated back-end developer specializing in creating scalable,
-                high-performance APIs with Python and Django REST Framework. My expertise lies in SQL,
-                and I'm passionate about optimizing databases for maximum efficiency.
-                <br />
-                Visit {' '}
-                <a className="text-cyan-600 hover:underline underline-offset-5 decoration-zinc-600"
-                    href="https://github.com/otinabrayo"
-                    rel='noreferrer noopener'
-                    target="_blank"
-                >
-                    my Github Page
-                </a> {' '}
-                for more projects information.
-            </p>
-            <Title id="projects">Projects</Title>
-            <p className="text-sm max-w-xl mb-6 font-bold">
-                Here are some of the projects I've worked on:
-            </p>
-        </div>
-    )
+  return (
+    <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
+      {/* Logo */}
+      <div className="w-full flex justify-start mb-6">
+        <img
+          src="./assets/logo.png"
+          className="w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white"
+          alt="logo"
+        />
+      </div>
+
+      {/* Name */}
+      <h1 className="md:text-7xl dark:text-white mb-2 font-bold">
+        Brian Otina Makau
+      </h1>
+
+      {/* Bio Section */}
+      <div className="max-w-3xl mx-auto space-y-6 mt-6 text-left">
+        <h2 className="text-3xl font-bold flex items-center gap-2">
+          <span>📘</span> My Data Engineering Journey
+        </h2>
+
+        <p className="text-lg leading-relaxed">
+          Hello, 👋 I'm <strong>Brian Otina</strong>, a dedicated Data Engineer passionate about building scalable and efficient data solutions that power business intelligence and advanced analytics.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          My journey into data engineering began with foundational skills in <strong>Python</strong> and <strong>SQL</strong>, which I’ve expanded through hands-on experience and continuous learning. Over time, I've designed and maintained end-to-end data pipelines using modern tools like <strong>Apache Airflow</strong> for workflow orchestration, <strong> Apache Kafka</strong> for real-time data streaming, and <strong>PySpark</strong> for distributed processing at scale.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          I have hands-on experience working within the <strong>Amazon Web Services (AWS)</strong> ecosystem, leveraging services such as <strong>S3</strong> for data storage, <strong>Lambda</strong> for serverless computing, <strong>Glue</strong> for ETL jobs, <strong>Athena</strong> for querying, <strong>Redshift</strong> and <strong>SnowFlake</strong> for high-performance data warehousing. I’m also experienced in integrating these services into automated data pipelines that support both batch and real-time analytics.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          One of my key focuses has been on structuring data platforms using <strong>Medallion Architecture</strong>, ensuring clean separation between raw, processed, and aggregated layers of data. I leverage best practices in <strong>data modeling</strong>, <strong>pipeline optimization</strong>, and <strong>governance</strong> to build systems that are not only scalable but also maintainable and future-proof.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          Beyond the technical side, I enjoy bridging the gap between raw data and actionable insights — collaborating closely with analysts and stakeholders to turn complex data problems into streamlined, reliable workflows.
+        </p>
+      </div>
+    </section>
+  );
 }
 
 export default Intro;

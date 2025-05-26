@@ -8,8 +8,9 @@ function Timeline() {
         <div className="flex flex-co md:flex-row my-20 justify-center">
             <div className="w-full md:w-7/12">
                 <Title id="timeline">Timeline</Title>
-                {timeline.map((project) => (
+                {timeline.map((project, index) => (
                     <TimelineItem
+                        key={`${project.year}-${index}`}
                         year={project.year}
                         title={project.title}
                         duration={project.duration}
@@ -18,8 +19,8 @@ function Timeline() {
                 ))}
             </div>
         </div>
-     );
+    );
 }
 
 export default Timeline
-;
+    ;
