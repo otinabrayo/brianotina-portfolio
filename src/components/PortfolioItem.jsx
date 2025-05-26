@@ -6,7 +6,7 @@ function PortfolioItem({ title, imgUrl, stack, link, description }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="block group border-2 border-stone-900 dark:border-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+      className="block group border-2 border-stone-900 dark:border-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white dark:bg-gray-800"
     >
       {/* Image Section */}
       <div className="overflow-hidden">
@@ -18,22 +18,23 @@ function PortfolioItem({ title, imgUrl, stack, link, description }) {
       </div>
 
       {/* Content Section */}
-      <div className="p-4">
-        <h3 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-white mb-2 group-hover:underline">
+      <div className="p-5">
+        <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white group-hover:underline">
           {title}
         </h3>
         <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
           {description}
         </p>
 
-        {/* Stack Tags */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        {/* Stack Tags with Icons */}
+        <div className="flex flex-wrap gap-2">
           {stack.map((item, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-md"
+              className="inline-flex items-center gap-1 px-2.5 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium rounded-md"
             >
-              {item}
+              {item.icon && React.createElement(item.icon)}
+              {item.name}
             </span>
           ))}
         </div>

@@ -3,48 +3,28 @@ import React from "react";
 
 function Intro() {
   return (
-    <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
-      {/* Logo */}
-      <div className="w-full flex justify-start mb-6">
-        <img
-          src="./assets/logo.png"
-          className="w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white"
-          alt="logo"
-        />
-      </div>
-
-      {/* Name */}
-      <h1 className="md:text-7xl dark:text-white mb-2 font-bold">
-        Brian Otina Makau
-      </h1>
-
-      {/* Bio Section */}
-      <div className="max-w-3xl mx-auto space-y-6 mt-6 text-left">
-        <h2 className="text-3xl font-bold flex items-center gap-2">
-          <span>📘</span> My Data Engineering Journey
-        </h2>
-
-        <p className="text-lg leading-relaxed">
-          Hello, 👋 I'm <strong>Brian Otina</strong>, a dedicated Data Engineer passionate about building scalable and efficient data solutions that power business intelligence and advanced analytics.
-        </p>
-
-        <p className="text-lg leading-relaxed">
-          My journey into data engineering began with foundational skills in <strong>Python</strong> and <strong>SQL</strong>, which I’ve expanded through hands-on experience and continuous learning. Over time, I've designed and maintained end-to-end data pipelines using modern tools like <strong>Apache Airflow</strong> for workflow orchestration, <strong> Apache Kafka</strong> for real-time data streaming, and <strong>PySpark</strong> for distributed processing at scale.
-        </p>
-
-        <p className="text-lg leading-relaxed">
-          I have hands-on experience working within the <strong>Amazon Web Services (AWS)</strong> ecosystem, leveraging services such as <strong>S3</strong> for data storage, <strong>Lambda</strong> for serverless computing, <strong>Glue</strong> for ETL jobs, <strong>Athena</strong> for querying, <strong>Redshift</strong> and <strong>SnowFlake</strong> for high-performance data warehousing. I’m also experienced in integrating these services into automated data pipelines that support both batch and real-time analytics.
-        </p>
-
-        <p className="text-lg leading-relaxed">
-          One of my key focuses has been on structuring data platforms using <strong>Medallion Architecture</strong>, ensuring clean separation between raw, processed, and aggregated layers of data. I leverage best practices in <strong>data modeling</strong>, <strong>pipeline optimization</strong>, and <strong>governance</strong> to build systems that are not only scalable but also maintainable and future-proof.
-        </p>
-
-        <p className="text-lg leading-relaxed">
-          Beyond the technical side, I enjoy bridging the gap between raw data and actionable insights — collaborating closely with analysts and stakeholders to turn complex data problems into streamlined, reliable workflows.
-        </p>
-      </div>
-    </section>
+    // <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
+        <div className="flex flex-col items-center justify-center pt-6 pb-6">
+            <div className="w-full flex justify-start">
+                <img src="./assets/logo.png" alt="logo" className="mb-2 w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white" />
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Brian Otina Makau</h1>
+            <p className="text-xl font-medium mb-6">Data Engineer | Building Scalable Data Solutions</p>
+            <p className="max-w-xl text-lg leading-relaxed">
+                Hello, 👋 I'm Brian Otina, a dedicated Data Engineer passionate about building scalable and efficient data solutions that power business intelligence and advanced analytics.
+            </p>
+            <ul className="list-disc pl-6 mt-4">
+                <li>Started with foundational skills in <strong>Python</strong>  and <strong>SQL</strong> for scripting and data transformation.</li>
+                <li>Designed and maintained end-to-end data pipelines using <strong>Apache Airflow</strong>,<strong> Apache Kafka</strong>,  and <strong>PySpark.</strong></li>
+                <li>Built real-time and batch processing workflows using Kafka, with structured topic modeling and schema evolution.</li>
+                <li>Developed and managed external stages and transformations using <strong>    SnowFlake</strong> with LATERAL FLATTEN and data lake integration.</li>
+                <li>Hands-on experience with <strong>AWS</strong> services including EC2, S3, Lambda, Glue, Athena, and Redshift for scalable cloud pipelines.</li>
+                <li>Orchestrated Dockerized environments using <strong>Docker Compose</strong> to manage Airflow, Kafka, PostgreSQL, and Schema Registry setups.</li>
+                <li>Focus on <strong>Medallion Architecture</strong> and best practices in data modeling, pipeline optimization, and governance.</li>
+            </ul>
+            <span className="p-4">|📘 For My Extended Data Engineering Journey <a href="#" target="_blank" rel="noopener noreferrer" className="underline animate-pulse text-rose-300">Click Me</a></span>
+        </div>
+    // </section>
   );
 }
 

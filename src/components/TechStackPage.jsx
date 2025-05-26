@@ -16,11 +16,12 @@ const techItems = [
   { name: "Apache Airflow", icon: SiApacheairflow },
   { name: "PySpark", icon: SiApacheecharts },
   { name: "Snowflake", icon: SiSnowflake },
+  { name: "Databases", icon: FaDatabase}
 ];
 
 function TechStackPage() {
   return (
-    <section className="max-w-xl mx-auto px-5 py-12">
+    <section className="max-w-xl mx-auto py-12">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center flex items-center justify-center gap-2">
         <span>⚙️</span> Tech Stacks I Work With
       </h2>
