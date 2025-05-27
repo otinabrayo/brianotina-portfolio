@@ -1,15 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function IntroExpanded() {
+  const navigate = useNavigate();
+
   return (
     <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
-      {/* Logo */}
-      <div className="w-full flex justify-start mb-6">
+      {/* Logo and Back Button */}
+      <div className="w-full flex justify-between items-center mb-6">
         <img
           src="./assets/logo.png"
           className="w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white"
           alt="logo"
         />
+        <button
+          onClick={() => navigate(-1)}
+          className="mt-10 mr-1 px-3 py-1.5 bg-stone-900 dark:bg-white text-white dark:text-stone-900 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 15 20" fill="currentColor">
+            <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+          </svg>
+          Back
+        </button>
       </div>
 
       {/* Name */}
@@ -28,11 +40,11 @@ function IntroExpanded() {
         </p>
 
         <p className="text-lg leading-relaxed">
-          My journey into data engineering began with foundational skills in <strong>Python</strong> and <strong>SQL</strong>, which I’ve expanded through hands-on experience and continuous learning. Over time, I've designed and maintained end-to-end data pipelines using modern tools like <strong>Apache Airflow</strong> for workflow orchestration, <strong> Apache Kafka</strong> for real-time data streaming, and <strong>PySpark</strong> for distributed processing at scale.
+          My journey into data engineering began with foundational skills in <strong>Python</strong> and <strong>SQL</strong>, which I've expanded through hands-on experience and continuous learning. Over time, I've designed and maintained end-to-end data pipelines using modern tools like <strong>Apache Airflow</strong> for workflow orchestration, <strong> Apache Kafka</strong> for real-time data streaming, and <strong>PySpark</strong> for distributed processing at scale.
         </p>
 
         <p className="text-lg leading-relaxed">
-          I have hands-on experience working within the <strong>Amazon Web Services (AWS)</strong> ecosystem, leveraging services such as <strong>S3</strong> for data storage, <strong>Lambda</strong> for serverless computing, <strong>Glue</strong> for ETL jobs, <strong>Athena</strong> for querying, <strong>Redshift</strong> and <strong>SnowFlake</strong> for high-performance data warehousing. I’m also experienced in integrating these services into automated data pipelines that support both batch and real-time analytics.
+          I have hands-on experience working within the <strong>Amazon Web Services (AWS)</strong> ecosystem, leveraging services such as <strong>S3</strong> for data storage, <strong>Lambda</strong> for serverless computing, <strong>Glue</strong> for ETL jobs, <strong>Athena</strong> for querying, <strong>Redshift</strong> and <strong>SnowFlake</strong> for high-performance data warehousing. I'm also experienced in integrating these services into automated data pipelines that support both batch and real-time analytics.
         </p>
 
         <p className="text-lg leading-relaxed">
@@ -48,10 +60,10 @@ function IntroExpanded() {
       </div>
 
       <div className="border-t-2 text-center dark:bg-stone-900 bg-stone-300 dark:text-white text-black">
-         {/* Social Icons */}
-         <p className="text-sm mt-2 opacity-50">
-            &copy; {new Date().getFullYear()}  Developed and Designed by Brian Otina. <br /> All rights reserved.
-         </p>
+        {/* Social Icons */}
+        <p className="text-sm mt-2 opacity-50">
+          &copy; {new Date().getFullYear()}  Developed and Designed by Brian Otina. <br /> All rights reserved.
+        </p>
       </div>
     </section>
   );
