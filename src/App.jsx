@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import TechStackPage from './components/TechStackPage'
+import Crypto_currency from './components/projects_components/Crypto_currency'
 
 function App() {
    const [theme, setTheme] = useState(null);
@@ -94,6 +95,7 @@ function App() {
                         }
                      />
                      <Route path="/journey" element={<IntroExpanded />} />
+                     <Route path="/crypto_project" element={<Crypto_currency />} />
                   </Routes>
                </Router>
             </div>

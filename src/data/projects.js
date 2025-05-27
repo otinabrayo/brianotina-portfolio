@@ -1,9 +1,23 @@
 import { FaAws, FaPython, FaDatabase } from "react-icons/fa";
 import { SiAmazons3, SiSnowflake, SiApachekafka, SiApacheairflow, SiPostgresql  } from "react-icons/si";
-import { TbBrandDatabricks } from "react-icons/tb";
+import { TbBrandDatabricks, TbDeviceAnalytics } from "react-icons/tb";
+import { MdAnalytics } from "react-icons/md";
 import { DiDocker } from "react-icons/di";
 
 export default [
+    {
+        title: 'Crypto Currency Data Pipeline ',
+        imgUrl: `${import.meta.env.BASE_URL}assets/crypto_pr/crypto_etl_architect.png`,
+        stack: [
+            { name: 'Python', icon: FaPython },
+            { name: 'Snowflake', icon: SiSnowflake },
+            { name: 'Amazon s3', icon: SiAmazons3 },
+            { name: 'SQL', icon: FaDatabase  },
+            { name: 'PowerBi', icon: TbDeviceAnalytics  }
+        ],
+        // link: `{onClick={() => navigate()}`,
+        description: 'The pipeline uses Apache Kafka for streaming and Apache Airflow for orchestration, following the Medallion pattern for data quality improvements. Services are containerized using Docker and integrated with a Schema Registry. Raw data is stored in Amazon S3 and loaded into Snowflake via Snowpipe for fast querying and analytics.'
+    },
     {
         title: 'Data Analytics',
         imgUrl: `${import.meta.env.BASE_URL}assets/data_analysis.jpg`,

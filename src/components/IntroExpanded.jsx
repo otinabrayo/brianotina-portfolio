@@ -8,11 +8,6 @@ function IntroExpanded() {
     <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
       {/* Logo and Back Button */}
       <div className="w-full flex justify-between items-center mb-6">
-        <img
-          src="./assets/logo.png"
-          className="w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white"
-          alt="logo"
-        />
         <button
           onClick={() => navigate(-1)}
           className="mt-10 mr-1 px-3 py-1.5 bg-stone-900 dark:bg-white text-white dark:text-stone-900 rounded-lg hover:opacity-90 transition-opacity flex items-center gap-2"
