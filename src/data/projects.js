@@ -1,6 +1,7 @@
 import { FaAws, FaPython, FaDatabase } from "react-icons/fa";
-import { SiAmazons3, SiSnowflake, SiApachekafka, SiApacheairflow, SiPostgresql  } from "react-icons/si";
+import { SiAmazons3, SiSnowflake, SiApachekafka, SiApacheairflow, SiPostgresql } from "react-icons/si";
 import { TbBrandDatabricks, TbDeviceAnalytics } from "react-icons/tb";
+import { DiMsqlServer } from "react-icons/di";
 import { MdAnalytics } from "react-icons/md";
 import { DiDocker } from "react-icons/di";
 
@@ -12,22 +13,22 @@ export default [
             { name: 'Python', icon: FaPython },
             { name: 'Snowflake', icon: SiSnowflake },
             { name: 'Amazon s3', icon: SiAmazons3 },
-            { name: 'SQL', icon: FaDatabase  },
-            { name: 'PowerBi', icon: TbDeviceAnalytics  }
+            { name: 'SQL', icon: FaDatabase },
+            { name: 'PowerBi', icon: TbDeviceAnalytics }
         ],
-        // link: `{onClick={() => navigate()}`,
+        link: '/crypto-project',
         description: 'The pipeline uses Apache Kafka for streaming and Apache Airflow for orchestration, following the Medallion pattern for data quality improvements. Services are containerized using Docker and integrated with a Schema Registry. Raw data is stored in Amazon S3 and loaded into Snowflake via Snowpipe for fast querying and analytics.'
     },
     {
-        title: 'Data Analytics',
-        imgUrl: `${import.meta.env.BASE_URL}assets/data_analysis.jpg`,
+        title: 'Data Warehousing & Analytics',
+        imgUrl: `${import.meta.env.BASE_URL}assets/data_analysis/movie_industry.jpg`,
         stack: [
             { name: 'Python', icon: FaPython },
-            { name: 'SQLServer', icon: SiPostgresql },
-            { name: 'PowerBi' },
-            { name: 'SQL', icon: FaDatabase  }
+            { name: 'SQLServer', icon: DiMsqlServer },
+            { name: 'PowerBi', icon: TbDeviceAnalytics},
+            { name: 'SQL', icon: FaDatabase }
         ],
-        link: 'https://github.com/otinabrayo/Data-Warehouse-Project-sql',
+        link: '/data-analysis',
         description: 'A data warehouse project that uses SQL Server and Power BI to analyze \
         and visualize data. The project includes ETL processes, data modeling, and dashboard \
         creation.'
@@ -65,7 +66,7 @@ export default [
         imgUrl: `${import.meta.env.BASE_URL}assets/reddit.jpg`,
         stack: [
             { name: 'AWS', icon: FaAws },
-            { name: 'Glue', icon: SiAmazons3},
+            { name: 'Glue', icon: SiAmazons3 },
             { name: 'S3', icon: SiAmazons3 },
             { name: 'Python', icon: FaPython }
         ],

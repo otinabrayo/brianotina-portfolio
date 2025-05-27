@@ -1,13 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 function PortfolioItem({ title, imgUrl, stack, link, description }) {
-  const navigate = useNavigate();
-
   return (
     <a
-      onClick={() => { navigate('/crypto_project') }}
-      target="_blank"
+      href={link}
       rel="noopener noreferrer"
       className="block group border-2 border-stone-900 dark:border-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white dark:bg-gray-800"
     >

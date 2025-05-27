@@ -8,6 +8,8 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import TechStackPage from './components/TechStackPage'
 import Crypto_currency from './components/projects_components/Crypto_currency'
+import Data_analysis from './components/projects_components/Data_analysis'
+import { ImageViewerProvider } from './components/Image_viewer'
 
 function App() {
    const [theme, setTheme] = useState(null);
@@ -80,23 +82,26 @@ function App() {
          <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
             <div className="max-w-5xl w-11/12 mx-auto">
                <Router>
-                  <Routes>
-                     <Route
-                        path="/"
-                        element={
-                           <>
-                              <Intro />
-                              <Portfolio />
-                              <TechStackPage />
-                              <Timeline />
-                              <Contact />
-                              <Footer />
-                           </>
-                        }
-                     />
-                     <Route path="/journey" element={<IntroExpanded />} />
-                     <Route path="/crypto_project" element={<Crypto_currency />} />
-                  </Routes>
+                  <ImageViewerProvider>
+                     <Routes>
+                        <Route
+                           path="/"
+                           element={
+                              <>
+                                 <Intro />
+                                 <Portfolio />
+                                 <TechStackPage />
+                                 <Timeline />
+                                 <Contact />
+                                 <Footer />
+                              </>
+                           }
+                        />
+                        <Route path="/journey" element={<IntroExpanded />} />
+                        <Route path="/crypto-project" element={<Crypto_currency />} />
+                        <Route path="/data-analysis" element={<Data_analysis />} />
+                     </Routes>
+                  </ImageViewerProvider>
                </Router>
             </div>
          </div>
