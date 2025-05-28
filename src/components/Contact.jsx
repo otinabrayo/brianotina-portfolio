@@ -133,25 +133,25 @@ function Contact() {
          </div>
 
          {/* <div className="flex flex-col mb-10 mx-auto"> */}
-         <div className="flex justify-center items-center">
+         <div className=" justify-center items-center ">
             <form
                action="https://getform.io/f/bolmpdea"
                method='POST'
-               className=" flex flex-col w-full md:w-7/12"
+               className=" flex flex-col "
             >
                <input
                   required
                   type="text"
                   name='email'
                   placeholder="Email"
-                  className="my-4 p-2 bg-transparent border-2 rounded-md focus:outline-none"
+                  className="dark:border-white border border-stone-900 my-4 p-2 bg-transparent rounded-md focus:outline-none"
                />
                <textarea
                   required
                   name="message"
                   placeholder="Message"
                   rows='4'
-                  className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
+                  className="dark:border-white border border-stone-900 p-2 mb-4 bg-transparent rounded-md focus:outline-none"
                />
                <button
                   type="submit"
