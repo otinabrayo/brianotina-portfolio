@@ -29,6 +29,15 @@ function Data_analysis() {
                     1. Customer Behavior Analysis Project — Data Insights for Targeted Strategies
                 </h1>
 
+                {/* Repo Link */}
+                <a
+                    href="https://github.com/otinabrayo/CustomerBehaviourAnalysis"
+                    target="_blank"
+                    className="text-blue-500 mb-6 animate animate-pulse hover:underline"
+                >
+                    Source Code (GitHub Repository)
+                </a>
+
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
                     This project aimed to uncover actionable insights into customer purchasing behavior using real-world transactional data. By leveraging Python and SQL for data preparation and transformation, and Power BI for advanced visualization, the analysis supported segmentation and behavioral profiling to enhance business decision-making.
                 </p>
@@ -63,15 +72,6 @@ function Data_analysis() {
                         </li>
                     </ul>
                 </div>
-
-                {/* Repo Link */}
-                <a
-                    href="https://github.com/otinabrayo/CustomerBehaviourAnalysis"
-                    target="_blank"
-                    className="text-blue-500 mb-6 animate animate-pulse hover:underline"
-                >
-                    Source Code (GitHub Repository)
-                </a>
 
                 {/* Dashboard Reports */}
                 <h2 className="text-2xl font-semibold my-4 text-gray-900 dark:text-white">Dashboard Reports</h2>
@@ -234,7 +234,7 @@ function Data_analysis() {
 
                 {/* Tech Stack */}
                 <div>
-                    <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Tech Stack</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">🧰 Tech Stack</h2>
                     <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-medium">Python (Pandas, NumPy)</span>
                         <span className="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-medium">SQL (MySQL, SQLSERVER)</span>

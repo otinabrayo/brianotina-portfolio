@@ -29,6 +29,15 @@ function Crypto_currency() {
           End-to-End Crypto Currency Data Pipeline with Real-Time Ingestion & Quality Automation
         </h1>
 
+        {/* Repo Link */}
+        <a
+          href="https://github.com/otinabrayo/CryptoDataPipeline"
+          target="_blank"
+          className="text-blue-500 mb-6 animate animate-pulse hover:underline"
+        >
+          View Source Code in my GitHub
+        </a>
+
         {/* Objective */}
         <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Project Objective</h2>
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
@@ -72,15 +81,6 @@ function Crypto_currency() {
           <li><strong>End-to-End Latency:</strong>  3 minutes from ingestion to Snowflake availability.</li>
           <li><strong>Uptime:</strong> 99.8% thanks to containerization and job monitoring.</li>
         </ul>
-
-        {/* Repo Link */}
-        <a
-          href="https://github.com/otinabrayo/CryptoDataPipeline"
-          target="_blank"
-          className="text-blue-500 mb-6 animate animate-pulse hover:underline"
-        >
-          View Source Code in my GitHub
-        </a>
 
         {/* Architecture Diagram */}
         <h2 className="text-2xl font-semibold my-4 text-gray-900 dark:text-white">Pipeline Architecture</h2>

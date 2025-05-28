@@ -16,8 +16,20 @@ export default [
             { name: 'SQL', icon: FaDatabase },
             { name: 'PowerBi', icon: TbDeviceAnalytics }
         ],
-        link: '/crypto-project',
+        link: '/crypto-pipeline',
         description: 'The pipeline uses Apache Kafka for streaming and Apache Airflow for orchestration, following the Medallion pattern for data quality improvements. Services are containerized using Docker and integrated with a Schema Registry. Raw data is stored in Amazon S3 and loaded into Snowflake via Snowpipe for fast querying and analytics.'
+    },
+    {
+        title: 'Spotify Data Pipeline',
+        imgUrl: `${import.meta.env.BASE_URL}assets/spotify_pipe/spotify-pipeline.png`,
+        stack: [
+            { name: 'AWS', icon: FaAws },
+            { name: 'Glue', icon: SiAmazons3 },
+            { name: 'S3', icon: SiAmazons3 },
+            { name: 'Python', icon: FaPython }
+        ],
+        link: '/spotify-pipeline',
+        description: 'This project focuses on building a robust data pipeline to extract, transform, and load (ETL) data from Spotify into a data warehouse. The pipeline is designed to handle both batch and streaming data, ensuring that the data is processed efficiently and made available for analysis and visualization.'
     },
     {
         title: 'Data Warehousing & Analytics',
@@ -34,20 +46,6 @@ export default [
         creation.'
     },
     {
-        title: 'Data Pipeline Engineering',
-        imgUrl: `${import.meta.env.BASE_URL}assets/pipeline.jpg`,
-        stack: [
-            { name: 'Snowflake', icon: SiSnowflake },
-            { name: 'Amazon EC2', icon: FaAws },
-            { name: 'APIs' },
-            { name: 'Docker', icon: DiDocker }
-        ],
-        link: 'https://github.com/otinabrayo/Reddit-Data-Pipeline',
-        description: 'This project is designed for real-time data streaming using Kafka. \
-        It fetches user data from the UserMe API, processes it using Python, and streams it \
-        via Kafka for further consumption.'
-    },
-    {
         title: 'Airflow Orchestration',
         imgUrl: `${import.meta.env.BASE_URL}assets/airflow-orchestration.jpg`,
         stack: [
@@ -56,23 +54,37 @@ export default [
             { name: 'Amazon s3 Bucket', icon: SiAmazons3 },
             { name: 'Apache Kafka', icon: SiApachekafka }
         ],
-        link: 'https://github.com/otinabrayo/AirflowWorkFlow',
+        link: '/airflow-orchestration',
         description: 'A complete Data Engineering pipeline using Apache Airflow, designed to \
         demonstrate scheduling, orchestration, data ingestion, transformation, and inter-task \
         communication.'
     },
-    {
-        title: 'Reddit Data Pipeline',
-        imgUrl: `${import.meta.env.BASE_URL}assets/reddit.jpg`,
-        stack: [
-            { name: 'AWS', icon: FaAws },
-            { name: 'Glue', icon: SiAmazons3 },
-            { name: 'S3', icon: SiAmazons3 },
-            { name: 'Python', icon: FaPython }
-        ],
-        link: 'https://github.com/otinabrayo/Reddit-Data-Pipeline',
-        description: 'This project demonstrates a scalable Reddit Data Pipeline using Reddit API,\
-        Python, Apache Airflow, Amazon EC2, and Amazon S3. It automates the extraction of data\
-        from the Reddit API and stores it in an S3 bucket for further analysis or processing.'
-    },
+    // {
+    //     title: 'Data Pipeline Engineering',
+    //     imgUrl: `${import.meta.env.BASE_URL}assets/pipeline.jpg`,
+    //     stack: [
+    //         { name: 'Snowflake', icon: SiSnowflake },
+    //         { name: 'Amazon EC2', icon: FaAws },
+    //         { name: 'APIs' },
+    //         { name: 'Docker', icon: DiDocker }
+    //     ],
+    //     link: 'https://github.com/otinabrayo/Reddit-Data-Pipeline',
+    //     description: 'This project is designed for real-time data streaming using Kafka. \
+    //     It fetches user data from the UserMe API, processes it using Python, and streams it \
+    //     via Kafka for further consumption.'
+    // },
+    // {
+    //     title: 'Reddit Data Pipeline',
+    //     imgUrl: `${import.meta.env.BASE_URL}assets/reddit.jpg`,
+    //     stack: [
+    //         { name: 'AWS', icon: FaAws },
+    //         { name: 'Glue', icon: SiAmazons3 },
+    //         { name: 'S3', icon: SiAmazons3 },
+    //         { name: 'Python', icon: FaPython }
+    //     ],
+    //     link: 'https://github.com/otinabrayo/Reddit-Data-Pipeline',
+    //     description: 'This project demonstrates a scalable Reddit Data Pipeline using Reddit API,\
+    //     Python, Apache Airflow, Amazon EC2, and Amazon S3. It automates the extraction of data\
+    //     from the Reddit API and stores it in an S3 bucket for further analysis or processing.'
+    // },
 ]

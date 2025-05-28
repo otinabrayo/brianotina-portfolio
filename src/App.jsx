@@ -10,6 +10,8 @@ import TechStackPage from './components/TechStackPage'
 import Crypto_currency from './components/projects_components/Crypto_currency'
 import Data_analysis from './components/projects_components/Data_analysis'
 import { ImageViewerProvider } from './components/Image_viewer'
+import Spotify_pipeline from './components/projects_components/Spotify_pipeline'
+import Airflow_orchestration from './components/projects_components/Airflow_orchestration'
 
 function App() {
    const [theme, setTheme] = useState(null);
@@ -98,8 +100,10 @@ function App() {
                            }
                         />
                         <Route path="/journey" element={<IntroExpanded />} />
-                        <Route path="/crypto-project" element={<Crypto_currency />} />
+                        <Route path="/crypto-pipeline" element={<Crypto_currency />} />
                         <Route path="/data-analysis" element={<Data_analysis />} />
+                        <Route path="/spotify-pipeline" element={<Spotify_pipeline />} />
+                        <Route path="/airflow-orchestration" element={<Airflow_orchestration />} />
                      </Routes>
                   </ImageViewerProvider>
                </Router>
