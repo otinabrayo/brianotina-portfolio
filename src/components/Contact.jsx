@@ -1,10 +1,10 @@
 import React from "react";
 import { SiGmail } from "react-icons/si";
 import {
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-  FaLinkedin,
-  FaGithub,
+   FaPhoneAlt,
+   FaMapMarkerAlt,
+   FaLinkedin,
+   FaGithub,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Title from "./Title";
@@ -38,11 +38,11 @@ function Contact() {
                />
                <button
                   type="submit"
-                  className="mb-5 transform transition-transform duration-400 hover:scale-[1.05]
+                  className="mb-5 transform transition-transform duration-400 hover:scale-[1.03]
                      cursor-pointer text-center inline-block px-8 py-3 w-max text-base
-                     font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500
+                     font-medium rounded-3xl text-white bg-gradient-to-r from-yellow-500 to-pink-500
                      drop-shadow-md "
-                  >
+               >
                   Work With Me
                </button>
             </form>
@@ -54,9 +54,9 @@ function Contact() {
 
                {/* Email */}
                <a href="mailto:brianotina20@gmail.com">
-                  <div className="flex items-center justify-between bg-stone-600 rounded-lg p-2">
+                  <div className="hover:text-blue-300 transition-transform hover:bg-stone-500 hover:scale-[1.02] flex items-center justify-between bg-stone-600 rounded-lg p-2">
                      <div className="flex items-center gap-2">
-                        <SiGmail size={20} color="BF3131" className="bg-white rounded p-1"/>
+                        <SiGmail size={20} color="BF3131" className="bg-white rounded p-1" />
                         <span className='hover:underline text-blue-500'>Email</span>
                      </div>
                      <span>brianotina20@gmail.com</span>
@@ -64,19 +64,21 @@ function Contact() {
                </a>
 
                {/* Phone */}
-               <div className="flex items-center justify-between bg-stone-600 rounded-lg p-2">
-                  <div className="flex items-center gap-2">
-                  <FaPhoneAlt size={20} color="483AA0" className="bg-white rounded p-1"/>
-                  <span>Phone</span>
+               <a href="tel:+254799978833">
+                  <div className="hover:text-blue-300 transition-transform hover:bg-stone-500 hover:scale-[1.02] flex items-center justify-between bg-stone-600 rounded-lg p-2 ">
+                     <div className="text-blue-500 flex items-center gap-2">
+                        <FaPhoneAlt size={20} color="483AA0" className="bg-white rounded p-1" />
+                        <span>Phone</span>
+                     </div>
+                     <span>+254799978833</span>
                   </div>
-                  <span>+254799978833</span>
-               </div>
+               </a>
 
                {/* Location */}
                <div className="flex items-center justify-between bg-stone-600 rounded-lg p-2">
                   <div className="flex items-center gap-2">
-                  <FaMapMarkerAlt size={20} color="#fff" />
-                  <span>Location</span>
+                     <FaMapMarkerAlt size={20} color="#fff" />
+                     <span>Location</span>
                   </div>
                   <span>Nairobi, KENYA</span>
                </div>
@@ -89,40 +91,40 @@ function Contact() {
             <div className="flex flex-col gap-4">
 
                {/* LinkedIn */}
-               <a href="https://www.linkedin.com/in/brian-makau-3a93b6354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-blue-500" >
-               <div className="flex items-center justify-between bg-stone-600 rounded-lg p-2">
-                  <div className="flex items-center gap-2">
-                     <FaLinkedin size={20} color="#fff" className="bg-blue-800 p-1" />
-                     <span className='hover:underline'>LinkedIn</span>
-                  </div>
-                  <p className="text-sm text-gray-300">
-                     Professional network
-                     <br />
+               <a href="https://www.linkedin.com/in/brian-makau-3a93b6354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="text-blue-500 hover:text-blue-300" >
+                  <div className="transition-transform hover:bg-stone-500 hover:scale-[1.02] flex items-center justify-between bg-stone-600 rounded-lg p-2">
+                     <div className="flex items-center gap-2">
+                        <FaLinkedin size={20} color="#fff" className="bg-blue-800 p-1" />
+                        <span className='hover:underline'>LinkedIn</span>
+                     </div>
+                     <p className="text-sm text-gray-300">
+                        Professional network
+                        <br />
                         500+ connections
-                  </p>
-               </div>
+                     </p>
+                  </div>
                </a>
 
                {/* GitHub */}
-               <a href="https://github.com/otinabrayo" target="_blank" className="text-blue-500">
-                  <div className="flex items-center justify-between bg-stone-600 rounded-lg p-2">
+               <a href="https://github.com/otinabrayo" target="_blank" className="text-blue-500 hover:text-blue-300">
+                  <div className="transition-transform hover:bg-stone-500 hover:scale-[1.02] flex items-center justify-between bg-stone-600 rounded-lg p-2">
                      <div className="flex items-center gap-2">
-                     <FaGithub size={20} color="#fff" />
-                     <span className='hover:underline'>GitHub</span>
+                        <FaGithub size={20} color="#fff" />
+                        <span className='hover:underline'>GitHub</span>
                      </div>
                      <p className="text-sm text-gray-300">
-                     Code repositories
-                     <br />
+                        Code repositories
+                        <br />
                         530+ contributions
                      </p>
                   </div>
                </a>
 
                {/* Twitter */}
-               <a href="https://x.com/JustOtina" target="_blank" className="text-blue-500">
-                  <div className="flex items-center justify-between bg-stone-600 rounded-lg p-2">
+               <a href="https://x.com/JustOtina" target="_blank" className="text-blue-500 hover:text-blue-300">
+                  <div className="transition-transform hover:bg-stone-500 hover:scale-[1.02] flex items-center justify-between bg-stone-600 rounded-lg p-2">
                      <div className="flex items-center gap-2">
-                        <FaXTwitter size={20} color="#fff" className="bg-black p-1 rounded"/>
+                        <FaXTwitter size={20} color="#fff" className="bg-black p-1 rounded" />
                         <span className='hover:underline'>formerly Twitter</span>
                      </div>
                      <p className="text-sm text-gray-300">
