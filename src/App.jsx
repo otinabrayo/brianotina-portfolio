@@ -12,6 +12,7 @@ import Data_analysis from './components/projects_components/Data_analysis'
 import { ImageViewerProvider } from './components/Image_viewer'
 import Spotify_pipeline from './components/projects_components/Spotify_pipeline'
 import Airflow_orchestration from './components/projects_components/Airflow_orchestration'
+import CertificatesAndCV from './components/CertificatesAndCV'
 
 function App() {
    const [theme, setTheme] = useState(null);
@@ -92,6 +93,7 @@ function App() {
                               <>
                                  <Intro />
                                  <Portfolio />
+                                 <CertificatesAndCV/>
                                  <TechStackPage />
                                  <Timeline />
                                  <Contact />
