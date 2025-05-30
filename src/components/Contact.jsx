@@ -38,12 +38,12 @@ function Contact() {
                />
                <button
                   type="submit"
-                  className="mb-5 transform transition-transform duration-400 hover:scale-[1.03]
-                     cursor-pointer text-center inline-block px-8 py-3 w-max text-base
+                  className="animate-pulse mb-4 transform transition-transform duration-400 hover:scale-[1.03]
+                     cursor-pointer text-center inline-block px-5 py-2 w-max text-base
                      font-medium rounded-3xl text-white bg-gradient-to-r from-yellow-500 to-pink-500
                      drop-shadow-md "
                >
-                  Work With Me
+                  Send
                </button>
             </form>
          </div>
