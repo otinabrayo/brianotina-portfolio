@@ -5,7 +5,7 @@ import PortfolioItem from "./PortfolioItem";
 function Portfolio() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-2 mb-8 text-center justify-center">
+      <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-2 mb-6 text-center justify-center">
         <span>📊</span> Projects
       </h2>
 

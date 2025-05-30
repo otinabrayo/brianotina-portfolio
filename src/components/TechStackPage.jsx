@@ -22,7 +22,7 @@ const techItems = [
 function TechStackPage() {
   return (
     <section className="max-w-xl mx-auto py-12">
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center flex items-center justify-center gap-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center flex items-center justify-center gap-2">
         <span>⚙️</span> Tech Stacks I Work With
       </h2>
 
