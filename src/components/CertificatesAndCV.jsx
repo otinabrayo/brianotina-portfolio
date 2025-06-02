@@ -4,9 +4,9 @@ import Title from "./Title";
 
 function CertificatesAndCV() {
     return (
-        <section className="max-w-4xl mx-auto px-4 py-3 transition-colors duration-300">
+        <section id="certificates" className="max-w-4xl mx-auto px-4 py-3 transition-colors duration-300">
             {/* CV Section */}
-            <Title id="contact">Resume & Certifications</Title>
+            <Title id="certificates">Resume & Certifications</Title>
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-8 shadow-md dark:shadow-none">
 
                 {/* RESUME */}

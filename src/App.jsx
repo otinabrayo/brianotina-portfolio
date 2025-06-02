@@ -13,6 +13,7 @@ import { ImageViewerProvider } from './components/Image_viewer'
 import Spotify_pipeline from './components/projects_components/Spotify_pipeline'
 import Airflow_orchestration from './components/projects_components/Airflow_orchestration'
 import CertificatesAndCV from './components/CertificatesAndCV'
+import Navigation from './components/Navigation'
 
 function App() {
    const [theme, setTheme] = useState(null);
@@ -78,7 +79,7 @@ function App() {
          <button
             type="button"
             onClick={handleThemeChange}
-            className="fixed p-3 z-10 right-20 top-4 bg-zinc-900 dark:bg-white rounded-md"
+            className="fixed p-2 z-[60] right-4 top-3 sm:right-20 sm:top-3 bg-zinc-900 dark:bg-white rounded-md"
          >
             {theme === 'dark' ? sun : moon}
          </button>
@@ -86,6 +87,7 @@ function App() {
             <div className="max-w-5xl w-11/12 mx-auto">
                <Router>
                   <ImageViewerProvider>
+                     <Navigation />
                      <Routes>
                         <Route
                            path="/"
@@ -93,14 +95,15 @@ function App() {
                               <>
                                  <Intro />
                                  <Portfolio />
-                                 <CertificatesAndCV/>
-                                 <TechStackPage />
                                  <Timeline />
+                                 <CertificatesAndCV />
+                                 <TechStackPage />
                                  <Contact />
                                  <Footer />
                               </>
                            }
                         />
+                        {/* <Route id="/timeline" element={<Timeline />} /> */}
                         <Route path="/journey" element={<IntroExpanded />} />
                         <Route path="/crypto-pipeline" element={<Crypto_currency />} />
                         <Route path="/data-analysis" element={<Data_analysis />} />

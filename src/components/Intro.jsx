@@ -6,11 +6,10 @@ function Intro() {
     const navigate = useNavigate();
 
     return (
-        // <section className="flex flex-col items-center justify-center text-center pt-6 pb-6 px-4">
-        <div className="flex flex-col items-center justify-center pt-6 pb-6">
-            <div className="w-full flex justify-start">
+        <div id='intro' className="flex flex-col items-center justify-center pt-24 pb-6">
+            {/* <div className="w-full flex justify-start">
                 <img src="./assets/logo.png" alt="logo" className="mb-2 w-16 h-16 rounded-full border-2 border-stone-900 dark:border-white" />
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-5xl font-bold mb-2">Brian Otina Makau</h1>
             <p className="text-xl font-medium mb-6">Data Engineer | Building Scalable Data Solutions</p>
             <p className="max-w-xl text-lg leading-relaxed">
@@ -25,9 +24,13 @@ function Intro() {
                 <li>Orchestrated Dockerized environments using <strong>Docker Compose</strong> to manage Airflow, Kafka, PostgreSQL, and Schema Registry setups.</li>
                 <li>Focus on <strong>Medallion Architecture</strong> and best practices in data modeling, pipeline optimization, and governance.</li>
             </ul>
-            <span className="p-4">🧾 My Extended Data Engineering Journey <a onClick={() => { navigate('/journey') }} className="m-1 border border-y-4 cursor-pointer text-stone-900 animate-pulse dark:text-pink-400 p-1">Click Me</a></span>
+            <span className="p-4">🧾 My Extended Data Engineering Journey
+                <a onClick={() => { navigate('/journey') }}
+                    className="m-1 rounded-md border-2 dark:border-white border-rose-900 cursor-pointer text-rose-900 animate-pulse dark:text-pink-400 p-1">
+                    Click Me
+                </a>
+            </span>
         </div>
-        // </section>
     );
 }
 

@@ -11,7 +11,7 @@ import Title from "./Title";
 
 function Contact() {
    return (
-      <section className="max-w-xl mx-auto px-7 pb-2 dark:text-white text-stone-900">
+      <section id="contact" className="max-w-xl mx-auto px-7 pb-2 dark:text-white text-stone-900">
          {/* Direct Communication */}
          <Title id="contact">Get In Contact</Title>
 
