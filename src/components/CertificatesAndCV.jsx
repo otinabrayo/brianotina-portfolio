@@ -50,7 +50,7 @@ function CertificatesAndCV() {
 
             {/* Certifications Section */}
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md dark:shadow-none">
-                <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 text-gray-800 dark:text-white">
+                <h2 className="text-xl font-semibold mb-6 flex items-center gap-2 text-gray-800 dark:text-white">
                 <FaRegIdCard /> Certifications
                 </h2>
 
