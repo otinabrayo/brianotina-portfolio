@@ -19,7 +19,7 @@ function CertificatesAndCV() {
                     </p>
 
                     <a
-                    // href="/resume-brian-otina.pdf"
+                    href="certs_and_cv/BrianOtinaResume.pdf"
                     download
                     className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors"
                     >
@@ -38,7 +38,7 @@ function CertificatesAndCV() {
                     </p>
 
                     <a
-                    // href="/resume-brian-otina.pdf"
+                    href="certs_and_cv/BrianOtinaCoverLetter.pdf"
                     download
                     className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors"
                     >
