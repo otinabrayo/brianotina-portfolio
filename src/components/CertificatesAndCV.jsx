@@ -9,32 +9,13 @@ function CertificatesAndCV() {
             <Title id="certificates">Resume & Certifications</Title>
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-8 shadow-md dark:shadow-none">
 
-                {/* RESUME */}
-                <div>
-                    <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
-                    <FaFilePdf /> Resume
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    You can download my Cover Letter.
-                    </p>
-
-                    <a
-                    href="certs_and_cv/BrianOtinaResume.pdf"
-                    download
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors"
-                    >
-                    <FaDownload />
-                    Download (Resume)
-                    </a>
-                </div>
-
                 {/* COVER LETTER */}
                 <div className="mt-8">
                     <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
                     <FaFileAlt /> Cover Letter
                     </h2>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    You can download my latest CV below. It contains detailed information about my work experience, education, skills, and projects.
+                    You can download my Cover Letter.
                     </p>
 
                     <a
@@ -44,6 +25,25 @@ function CertificatesAndCV() {
                     >
                     <FaDownload />
                     Download (Cover Letter)
+                    </a>
+                </div>
+
+                {/* RESUME */}
+                <div>
+                    <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
+                    <FaFilePdf /> Resume
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300 mb-6">
+                    You can download my latest CV below. It contains detailed information about my work experience, education, skills, and projects.
+                    </p>
+
+                    <a
+                    href="certs_and_cv/BrianOtinaResume.pdf"
+                    download
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors"
+                    >
+                    <FaDownload />
+                    Download (Resume)
                     </a>
                 </div>
             </div>
