@@ -12,7 +12,7 @@ function CertificatesAndCV() {
                 {/* RESUME */}
                 <div>
                     <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
-                    <FaFileAlt /> Resume
+                    <FaFilePdf /> Resume
                     </h2>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
                     You can download my Cover Letter.
@@ -31,7 +31,7 @@ function CertificatesAndCV() {
                 {/* COVER LETTER */}
                 <div className="mt-8">
                     <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
-                    <FaFilePdf /> Cover Letter
+                    <FaFileAlt /> Cover Letter
                     </h2>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
                     You can download my latest CV below. It contains detailed information about my work experience, education, skills, and projects.
