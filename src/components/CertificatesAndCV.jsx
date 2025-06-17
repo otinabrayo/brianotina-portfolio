@@ -9,8 +9,8 @@ function CertificatesAndCV() {
             <Title id="certificates">Resume & Certifications</Title>
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-8 shadow-md dark:shadow-none">
 
-                {/* RESUME */}
-                <div>
+                {/* COVER LETTER */}
+                <div className="mt-8">
                     <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
                     <FaFileAlt /> Cover Letter
                     </h2>
@@ -19,17 +19,17 @@ function CertificatesAndCV() {
                     </p>
 
                     <a
-                    href="certs_and_cv/BrianOtinaResume.pdf"
+                    href="certs_and_cv/BrianOtinaCoverLetter.pdf"
                     download
                     className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors"
                     >
                     <FaDownload />
-                    Download (Cover letter)
+                    Download (Cover Letter)
                     </a>
                 </div>
 
-                {/* COVER LETTER */}
-                <div className="mt-8">
+                {/* RESUME */}
+                <div>
                     <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-800 dark:text-white">
                     <FaFilePdf /> Resume
                     </h2>
@@ -38,7 +38,7 @@ function CertificatesAndCV() {
                     </p>
 
                     <a
-                    href="certs_and_cv/BrianOtinaCoverLetter.pdf"
+                    href="certs_and_cv/BrianOtinaResume.pdf"
                     download
                     className="inline-flex items-center gap-2 px-5 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-md transition-colors"
                     >
